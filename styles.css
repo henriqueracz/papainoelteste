@@ -1,0 +1,53 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #fff; /* Set the background color to white */
+}
+
+#piano {
+  display: flex;
+}
+
+.key {
+  width: 50px;
+  height: 200px;
+  border: 1px solid #666;
+  cursor: pointer;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.key:hover {
+  background-color: #ddd;
+}
+
+.key.active {
+  transform: translateY(4px);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
+}
+
+.black-key {
+  background-color: #333;
+  height: 120px;
+  width: 30px;
+  margin-left: -15px;
+  margin-right: -15px;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.black-key:hover {
+  background-color: #555;
+}
+
+.black-key.active {
+  transform: translateY(4px);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
+}
